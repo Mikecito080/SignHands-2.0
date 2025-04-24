@@ -1,1 +1,0 @@
-# SignHands-2.0
