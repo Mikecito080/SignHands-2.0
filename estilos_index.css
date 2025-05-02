@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: Arial, sans-serif;
     background-color: #f8fafc;
@@ -161,23 +161,42 @@
   #scrollTopBtn:hover {
     background-color: #1e40af;
   }
+
+  footer {
+    background-color: #1f2937; /* Gris oscuro elegante */
+    color: #f3f4f6; /* Texto claro */
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
   
 
     /* Responsible para movil  */
     @media (max-width: 768px) {
         header {
           flex-direction: column;
-          align-items: flex-start;
           padding: 10px;
         }
       
         .navbar {
-          flex-direction: column;
-          align-items: flex-start;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
           gap: 10px;
+          width: 100%;
         }
       
         .logo {
+          display: flex;
+          align-items: center;
+          gap: 8px;
           font-size: 1.2em;
         }
       
@@ -187,21 +206,20 @@
         }
       
         .nav-links {
-          width: 100%;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
+          align-items: center;
           gap: 10px;
-          margin-top: 10px;
+          flex-wrap: wrap;
         }
       
         .nav-links a {
-          margin-left: 0;
-          font-size: 1em;
+          font-size: 0.9em;
+          padding: 5px 10px;
         }
       
         .sign-in,
         .sign-up {
-          width: 100%;
           text-align: center;
         }
       
@@ -228,9 +246,13 @@
       .home-section {
         padding: 40px 20px;
         background-color: #f1f5f9;
+        align-items: center;
       }
       
       .home-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background-color: white;
         padding: 30px;
         margin-bottom: 20px;
@@ -241,30 +263,33 @@
       }
       .informative-block {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 30px;
+        text-align: justify;
+
       }
       
-      .signhands-info {
-  
-          flex-direction: row; /* Asegura que el texto quede a la izquierda y la imagen a la derecha */
-        }
-  
-      
       .informative-img {
-        width: 45%;
+        align-items: center;
+        width: 50%;
         max-width: 400px;
         border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+  
       }
       
       .informative-text {
-        width: 60%;
+        align-items: center;
+        width: 100%;
       }
       
       .informative-text h2, .informative-text h3 {
         font-size: 24px;
         margin-bottom: 10px;
+        text-align: center;
       }
       
       .informative-text p {
