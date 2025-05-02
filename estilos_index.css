@@ -161,6 +161,7 @@
   #scrollTopBtn:hover {
     background-color: #1e40af;
   }
+ 
 
   footer {
     background-color: #1f2937; /* Gris oscuro elegante */
@@ -320,6 +321,7 @@
         cursor: pointer;
         text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
       }
       
       .feature-card:hover {
