@@ -7,9 +7,18 @@
   body {
     font-family: Arial, sans-serif;
     background-color: #f8fafc;
+    padding-top: 80px;   /* altura del header */
+    padding-bottom: 60px; /* altura del footer */
   }
   
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que quede encima de todo */
+    background-color: white; /* Fondo para que no se vea el contenido detrás */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: sombra sutil */
     background-color: #2563eb; /* azul educativo */
     padding: 10px 20px;
     display: flex;
@@ -164,6 +173,12 @@
  
 
   footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     background-color: #1f2937; /* Gris oscuro elegante */
     color: #f3f4f6; /* Texto claro */
     padding: 2rem 1rem;
