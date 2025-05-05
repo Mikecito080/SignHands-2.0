@@ -1,4 +1,3 @@
-
   const btn = document.getElementById("scrollTopBtn");
 
   window.onscroll = function () {
