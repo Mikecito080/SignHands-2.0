@@ -1,0 +1,200 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    border: none; /* Elimina cualquier borde */
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-section {
+    padding: 40px 20px;
+    background-color: #f1f5f9;
+    align-items: center;
+}
+
+.home-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    text-align: center;
+    border: none; /* Elimina cualquier borde */
+}
+
+.informative-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.informative-img {
+    align-items: center;
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.informative-text {
+    align-items: center;
+    width: 100%;
+}
+
+.informative-text h2, .informative-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.informative-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-block {
+    margin-bottom: 30px;
+}
+
+/* botones */
+.card-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.feature-card {
+    position: relative;
+    border-radius: 15px;
+    width: 260px;
+    height: 200px;
+    padding: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    border: none; /* Elimina cualquier borde */
+}
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45); /* Oscurece el fondo */
+    z-index: 1;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3,
+.feature-card p {
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #fefefe;
+}
+
+.feature-card p {
+    font-size: 17px;
+    color: #fff9f9;
+}
+
+/* Imagenes específicas por categoría */
+.feature-card.familia {
+    background-image: url('IMAGENES/FAMILIA.jpg');
+}
+
+.feature-card.educacion {
+    background-image: url('IMAGENES/EDUCACION.jpg');
+}
+
+.feature-card.salud {
+    background-image: url('IMAGENES/SALUD.jpg');
+}
+
+.feature-card.comida {
+    background-image: url('IMAGENES/COMIDA.jpg');
+}
+
+.feature-card.direcciones {
+    background-image: url('IMAGENES/DIRECCIONES.jpg');
+}
+
+.feature-card.tiempo {
+    background-image: url('IMAGENES/TIEMPO.jpg');
+}
+
+.feature-card.verbos {
+    background-image: url('IMAGENES/VERBOS.jpg');
+}
+
+.feature-card.emociones {
+    background-image: url('IMAGENES/EMOCIONES.jpg');
+}
+
+.feature-card.animales {
+    background-image: url('IMAGENES/ANIMALES.jpg');
+}
+
+/* Puedes seguir agregando más categorías aquí */
+
+footer {
+    margin-bottom: 0px;
+    background-color: #1f2937;
+    color: #f3f4f6;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+footer p {
+    margin-top: 15px;
+}
+
+/* Para quitar subrayado en enlaces */
+a {
+    text-decoration: none;
+}

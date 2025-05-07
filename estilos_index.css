@@ -1,360 +1,347 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8fafc;
-    padding-top: 80px;   /* altura del header */
-    padding-bottom: 60px; /* altura del footer */
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Asegura que quede encima de todo */
-    background-color: white; /* Fondo para que no se vea el contenido detrás */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: sombra sutil */
-    background-color: #2563eb; /* azul educativo */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    font-size: 1.5em;
-  }
-  
-  .logo img {
-    height: 40px; /* o el tamaño que quieras */
-    width: 40px;  /* igual al height */
-    border-radius: 50%; /* hace que sea circular */
-    object-fit: cover; /* recorta el exceso si la imagen no es perfectamente cuadrada */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .nav-links a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-links img {
-    height: 20px;
-    vertical-align: middle;
-  }
+body {
+  font-family:inherit;
+  background-color: #f8fafc;
+}
 
-  .nav-links a {
-    transition: all 0.3s ease;
-  }
-  
-  .nav-links a img {
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-  
-  /* Efecto al pasar el mouse */
-  .nav-links a:hover {
-    transform: scale(1.1);
-    color: #dbeafe; /* Azul claro en el texto al hacer hover */
-  }
-  
-  /* Efecto especial en íconos de redes */
-  .nav-links a:hover img {
-    transform: scale(1.2);
-    filter: brightness(1.3);
-  }
-  
-  
-  .sign-in, .sign-up {
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .sign-up {
-    background-color: #6b92e5;
-    color: #2563eb;
-  }
-  
-  .hero {
-    background-image: url('imagenes/hand-3035665_1280.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-  }
-  
-  .hero-content {
-    background-color: rgba(30, 41, 59, 0.5); /* gris oscuro translúcido */
-    padding: 40px;
-    border-radius: 10px;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .btn {
-    background-color: #1e40af; /* azul acento */
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-  
-  .btn {
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .btn:hover {
-    background-color: #3b82f6; /* cambia el azul del botón */
-    transform: scale(1.05); /* agranda ligeramente */
-  }
+header {
+  background-color: #2563eb; /* azul educativo */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  
-  .hero-content {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1s ease-out forwards;
-    animation-delay: 0.2s;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
 
-  #scrollTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #2563eb;
-    color: white;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  #scrollTopBtn:hover {
-    background-color: #1e40af;
-  }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 1.5em;
+}
+
+.logo img {
+  height: 40px; /* o el tamaño que quieras */
+  width: 40px;  /* igual al height */
+  border-radius: 50%; /* hace que sea circular */
+  object-fit: cover; /* recorta el exceso si la imagen no es perfectamente cuadrada */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.nav-links a {
+  transition: all 0.3s ease;
+}
+
+.nav-links a img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.nav-links a:hover {
+  transform: scale(1.1);
+  color: #dbeafe; /* Azul claro en el texto al hacer hover */
+}
+
+/* Efecto especial en íconos de redes */
+.nav-links a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+
+
+.sign-in, .sign-up {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.sign-up {
+  background-color: #6b92e5;
+  color: #2563eb;
+}
+
  
+.hero {
+  background-image: url('imagenes/hand-3035665_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  
+}
 
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #1f2937; /* Gris oscuro elegante */
-    color: #f3f4f6; /* Texto claro */
-    padding: 2rem 1rem;
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 3rem;
+.hero-content {
+  background-color: rgba(30, 41, 59, 0.5); /* gris oscuro translúcido */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #1e40af; /* azul acento */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #3b82f6; /* cambia el azul del botón */
+  transform: scale(1.05); /* agranda ligeramente */
+}
+
+
+.hero-content {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  footer p {
-    margin: 0.5rem 0;
-  }
-  
+}
 
-    /* Responsible para movil  */
-    @media (max-width: 768px) {
-        header {
-          flex-direction: column;
-          padding: 10px;
-        }
-      
-        .navbar {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          gap: 10px;
-          width: 100%;
-        }
-      
-        .logo {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          font-size: 1.2em;
-        }
-      
-        .logo img {
-          height: 35px;
-          width: 35px;
-        }
-      
-        .nav-links {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 10px;
-          flex-wrap: wrap;
-        }
-      
-        .nav-links a {
-          font-size: 0.9em;
-          padding: 5px 10px;
-        }
-      
-        .sign-in,
-        .sign-up {
-          text-align: center;
-        }
-      
-        .hero {
-          height: auto;
-          padding: 40px 20px;
-        }
-      
-        .hero-content {
-          padding: 20px;
-        }
-      
-        .hero-content h1 {
-          font-size: 2em;
-        }
-      
-        .btn {
-          width: 100%;
-          padding: 10px 0;
-          font-size: 1em;
-        }
-      }
-      /* demas bloques del home */
-      .home-section {
-        padding: 40px 20px;
-        background-color: #f1f5f9;
-        align-items: center;
-      }
-      
-      .home-block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-        padding: 30px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        font-size: 1.2em;
-        text-align: center;
-      }
-      .informative-block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        text-align: justify;
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
 
+#scrollTopBtn:hover {
+  background-color: #1e40af;
+}
+
+
+footer {
+  background-color: #1f2937; /* Gris oscuro elegante */
+  color: #f3f4f6; /* Texto claro */
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+
+  /* Responsible para movil  */
+  @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 10px;
       }
-      
-      .informative-img {
+    
+      .navbar {
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        width: 50%;
-        max-width: 400px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-  
-      }
-      
-      .informative-text {
-        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
         width: 100%;
       }
-      
-      .informative-text h2, .informative-text h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        text-align: center;
-      }
-      
-      .informative-text p {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #333;
-        margin-bottom: 20px;
-      }
-      
-      .home-block {
-        margin-bottom: 30px;
-      }
-      /* botones */
-      .card-block {
+    
+      .logo {
         display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1.2em;
+      }
+    
+      .logo img {
+        height: 35px;
+        width: 35px;
+      }
+    
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.5rem;
-        padding: 2rem;
       }
-      
-      .feature-card {
-        background-color: #2563eb;
-        border: 2px solid #ccc;
-        border-radius: 15px;
-        padding: 1.5rem;
-        width: 260px;
-        cursor: pointer;
+    
+      .nav-links a {
+        font-size: 0.9em;
+        padding: 5px 10px;
+      }
+    
+      .sign-in,
+      .sign-up {
         text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      
       }
-      
-      .feature-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        background-color: #e0f7fa;
+    
+      .hero {
+        height: auto;
+        padding: 40px 20px;
       }
-      
-      .feature-card h3 {
-        margin-bottom: 10px;
-        font-size: 20px;
-        color: #000000;
+    
+      .hero-content {
+        padding: 20px;
       }
-      
-      .feature-card p {
-        font-size: 14px;
-        color: #000000;
+    
+      .hero-content h1 {
+        font-size: 2em;
       }
-      
-      
-      
+    
+      .btn {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1em;
+      }
+    }
+    /* demas bloques del home */
+    .home-section {
+      padding: 40px 20px;
+      background-color: #f1f5f9;
+      align-items: center;
+    }
+    
+    .home-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .informative-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      text-align: justify;
+
+    }
+    
+    .informative-img {
+      align-items: center;
+      width: 50%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+
+    }
+    
+    .informative-text {
+      align-items: center;
+      width: 100%;
+    }
+    
+    .informative-text h2, .informative-text h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    
+    .informative-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .home-block {
+      margin-bottom: 30px;
+    }
+    /* botones */
+    .card-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    
+    .feature-card {
+      background-color: #2563eb;
+      border: 2px solid #ccc;
+      border-radius: 15px;
+      padding: 1.5rem;
+      width: 260px;
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      background-color: #e0f7fa;
+    }
+    
+    .feature-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #000000;
+    }
+    
+    .feature-card p {
+      font-size: 14px;
+      color: #000000;
+    }
+    
+
+
