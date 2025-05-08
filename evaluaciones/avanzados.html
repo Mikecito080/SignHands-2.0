@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Avanzado</title>
+    <link rel="stylesheet" href="evaluaciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <script src="evaluaciones.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="imagenes/logoblack.png" alt="Logo" class="header-img">
+        <span>SignHands</span>
+        <a href="Evaluaciones.html">
+        </a>
+        <nav class="navbar">
+            <a href="index.html"><button class="nav-btn">Descripción</button></a>
+            <a href="VOCABULARIO/Vocabulario.html"><button class="nav-btn">Vocabulario</button></a>
+            <a href="Alfabeto.html"><button class="nav-btn">Alfabeto</button></a>
+            <a href="Buzon.html"><button class="nav-btn">Buzon de sugerencias</button></a>
+            <a href="Progreso.html"><button class="nav-btn">Progreso</button></a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Evaluacion de Preguntas Nivel Avanzado</h2>
+        <form id="formulario">
+            <!-- Pregunta 1 -->
+            <div class="card pregunta" id="pregunta1">
+                <p>1) ¿Cómo expresarías una emoción de felicidad?</p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="p1" value="Alegria"><img src="Imag_evaluaciones/alegria.gif"></label>
+                    <label class="option"><input type="radio" name="p1" value="Amor"><img src="Imag_evaluaciones/amor.gif"></label>
+                    <label class="option"><input type="radio" name="p1" value="Asombro"><img src="Imag_evaluaciones/asombro.gif"></label>
+                </div>
+                <div class="navigation">
+                    <button type="button" class="next-btn" onclick="siguiente(1, 2)">Siguiente</button>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="card pregunta hidden" id="pregunta2">
+                <p>2) ¿Cómo expresarías cariño a otra persona?</p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="p2" value="Alegria"><img src="Imag_evaluaciones/alegria.gif"></label>
+                    <label class="option"><input type="radio" name="p2" value="Amor"><img src="Imag_evaluaciones/amor.gif"></label>
+                    <label class="option"><input type="radio" name="p2" value="Asombro"><img src="Imag_evaluaciones/asombro.gif"></label>
+                </div>
+                <div class="navigation">
+                    <button type="button" class="prev-btn" onclick="anterior(1)">Anterior</button>
+                    <button type="button" class="next-btn" onclick="siguiente(2, 3)">Siguiente</button>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="card pregunta hidden" id="pregunta3">
+                <p>3) ¿Cómo expresarías una emoción que te impresiona?</p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="p3" value="Alegria"><img src="Imag_evaluaciones/alegria.gif"></label>
+                    <label class="option"><input type="radio" name="p3" value="Amor"><img src="Imag_evaluaciones/amor.gif"></label>
+                    <label class="option"><input type="radio" name="p3" value="Asombro"><img src="Imag_evaluaciones/asombro.gif"></label>
+                </div>
+                <div class="navigation">
+                    <button type="button" class="prev-btn" onclick="anterior(2)">Anterior</button>
+                    <button type="button" class="next-btn" onclick="siguiente(3, 4)">Siguiente</button>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="card pregunta hidden" id="pregunta4">
+                <p>4) ¿Cómo expresarías </p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="p4" value="Alegria"><img src="Imag_evaluaciones/alegria.gif"></label>
+                    <label class="option"><input type="radio" name="p4" value="Amor"><img src="Imag_evaluaciones/amor.gif"></label>
+                    <label class="option"><input type="radio" name="p4" value="Asombro"><img src="Imag_evaluaciones/asombro.gif"></label>
+                </div>
+                <div class="navigation">
+                    <button type="button" class="prev-btn" onclick="anterior(3)">Anterior</button>
+                    <button type="button" class="next-btn" onclick="siguiente(4, 5)">Siguiente</button>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="card pregunta hidden" id="pregunta5">
+                <p>5) ¿Cómo expresarías </p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="p5" value="Alegria"><img src="Imag_evaluaciones/alegria.gif"></label>
+                    <label class="option"><input type="radio" name="p5" value="Amor"><img src="Imag_evaluaciones/amor.gif"></label>
+                    <label class="option"><input type="radio" name="p5" value="Asombro"><img src="Imag_evaluaciones/asombro.gif"></label>
+                </div>
+                <div class="navigation">
+                    <button type="button" class="prev-btn" onclick="anterior(4)">Anterior</button>
+                    <button type="submit" class="next-btn">Enviar</button>
+                </div>
+            </div>
+
+
+        </form>
+        <button class="header-btn">Salir</button>
+    </div>
+    
+</body>
+
+<footer>
+    <p>SignHands</p>
+    <p>&copy; 2025 Vocabulario de Señas</p>
+    <p> Realizado por Maicol Lopez, John Yate, Julian Villamarin, Juan Vargas</p>
+</footer>
+</html>
